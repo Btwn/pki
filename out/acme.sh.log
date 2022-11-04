@@ -1,0 +1,92 @@
+[Wed Nov  2 19:43:08 UTC 2022] Running cmd: issue
+[Wed Nov  2 19:43:08 UTC 2022] _main_domain='cadiaz.mavi.mx'
+[Wed Nov  2 19:43:08 UTC 2022] _alt_domains='no'
+[Wed Nov  2 19:43:08 UTC 2022] Using config home:/acme.sh
+[Wed Nov  2 19:43:08 UTC 2022] default_acme_server
+[Wed Nov  2 19:43:08 UTC 2022] ACME_DIRECTORY='https://acme.zerossl.com/v2/DV90'
+[Wed Nov  2 19:43:08 UTC 2022] DOMAIN_PATH='/acme.sh/cadiaz.mavi.mx'
+[Wed Nov  2 19:43:08 UTC 2022] Le_NextRenewTime
+[Wed Nov  2 19:43:08 UTC 2022] Using ACME_DIRECTORY: https://acme.zerossl.com/v2/DV90
+[Wed Nov  2 19:43:08 UTC 2022] _init api for server: https://acme.zerossl.com/v2/DV90
+[Wed Nov  2 19:43:08 UTC 2022] GET
+[Wed Nov  2 19:43:08 UTC 2022] url='https://acme.zerossl.com/v2/DV90'
+[Wed Nov  2 19:43:08 UTC 2022] timeout=
+[Wed Nov  2 19:43:08 UTC 2022] _CURL='curl --silent --dump-header /acme.sh/http.header  -L '
+[Wed Nov  2 19:43:09 UTC 2022] ret='0'
+[Wed Nov  2 19:43:09 UTC 2022] ACME_KEY_CHANGE='https://acme.zerossl.com/v2/DV90/keyChange'
+[Wed Nov  2 19:43:09 UTC 2022] ACME_NEW_AUTHZ
+[Wed Nov  2 19:43:09 UTC 2022] ACME_NEW_ORDER='https://acme.zerossl.com/v2/DV90/newOrder'
+[Wed Nov  2 19:43:09 UTC 2022] ACME_NEW_ACCOUNT='https://acme.zerossl.com/v2/DV90/newAccount'
+[Wed Nov  2 19:43:09 UTC 2022] ACME_REVOKE_CERT='https://acme.zerossl.com/v2/DV90/revokeCert'
+[Wed Nov  2 19:43:09 UTC 2022] ACME_AGREEMENT='https://secure.trust-provider.com/repository/docs/Legacy/20221001_Certificate_Subscriber_Agreement_v_2_5_click.pdf'
+[Wed Nov  2 19:43:09 UTC 2022] ACME_NEW_NONCE='https://acme.zerossl.com/v2/DV90/newNonce'
+[Wed Nov  2 19:43:09 UTC 2022] Using CA: https://acme.zerossl.com/v2/DV90
+[Wed Nov  2 19:43:09 UTC 2022] _on_before_issue
+[Wed Nov  2 19:43:09 UTC 2022] _chk_main_domain='cadiaz.mavi.mx'
+[Wed Nov  2 19:43:09 UTC 2022] _chk_alt_domains
+[Wed Nov  2 19:43:09 UTC 2022] Le_LocalAddress
+[Wed Nov  2 19:43:09 UTC 2022] d='cadiaz.mavi.mx'
+[Wed Nov  2 19:43:09 UTC 2022] Check for domain='cadiaz.mavi.mx'
+[Wed Nov  2 19:43:09 UTC 2022] _currentRoot='dns'
+[Wed Nov  2 19:43:09 UTC 2022] d
+[Wed Nov  2 19:43:09 UTC 2022] config file is empty, can not read CA_KEY_HASH
+[Wed Nov  2 19:43:09 UTC 2022] Using config home:/acme.sh
+[Wed Nov  2 19:43:09 UTC 2022] ACME_DIRECTORY='https://acme.zerossl.com/v2/DV90'
+[Wed Nov  2 19:43:09 UTC 2022] _init api for server: https://acme.zerossl.com/v2/DV90
+[Wed Nov  2 19:43:09 UTC 2022] RSA key
+[Wed Nov  2 19:43:09 UTC 2022] config file is empty, can not read CA_EAB_KEY_ID
+[Wed Nov  2 19:43:09 UTC 2022] config file is empty, can not read CA_EAB_HMAC_KEY
+[Wed Nov  2 19:43:09 UTC 2022] config file is empty, can not read CA_EMAIL
+[Wed Nov  2 19:43:09 UTC 2022] No EAB credentials found for ZeroSSL, let's get one
+[Wed Nov  2 19:43:09 UTC 2022] [1;32macme.sh is using ZeroSSL as default CA now.[0m
+[Wed Nov  2 19:43:09 UTC 2022] [1;32mPlease update your account with an email address first.[0m
+[Wed Nov  2 19:43:09 UTC 2022] [1;32macme.sh --register-account -m my@example.com[0m
+[Wed Nov  2 19:43:09 UTC 2022] See: [1;32mhttps://github.com/acmesh-official/acme.sh/wiki/ZeroSSL.com-CA[0m
+[Wed Nov  2 19:43:09 UTC 2022] _on_issue_err
+[Wed Nov  2 19:43:09 UTC 2022] Please check log file for more details: /acme.sh/acme.sh.log
+[Wed Nov  2 19:50:42 UTC 2022] Running cmd: issue
+[Wed Nov  2 19:50:42 UTC 2022] _main_domain='cadiaz.mavi.mx'
+[Wed Nov  2 19:50:42 UTC 2022] _alt_domains='no'
+[Wed Nov  2 19:50:42 UTC 2022] Using config home:/acme.sh
+[Wed Nov  2 19:50:42 UTC 2022] default_acme_server
+[Wed Nov  2 19:50:42 UTC 2022] ACME_DIRECTORY='https://acme.zerossl.com/v2/DV90'
+[Wed Nov  2 19:50:42 UTC 2022] DOMAIN_PATH='/acme.sh/cadiaz.mavi.mx'
+[Wed Nov  2 19:50:42 UTC 2022] Le_NextRenewTime
+[Wed Nov  2 19:50:42 UTC 2022] Using ACME_DIRECTORY: https://acme.zerossl.com/v2/DV90
+[Wed Nov  2 19:50:42 UTC 2022] _init api for server: https://acme.zerossl.com/v2/DV90
+[Wed Nov  2 19:50:42 UTC 2022] GET
+[Wed Nov  2 19:50:42 UTC 2022] url='https://acme.zerossl.com/v2/DV90'
+[Wed Nov  2 19:50:42 UTC 2022] timeout=
+[Wed Nov  2 19:50:42 UTC 2022] _CURL='curl --silent --dump-header /acme.sh/http.header  -L '
+[Wed Nov  2 19:50:43 UTC 2022] ret='0'
+[Wed Nov  2 19:50:43 UTC 2022] ACME_KEY_CHANGE='https://acme.zerossl.com/v2/DV90/keyChange'
+[Wed Nov  2 19:50:43 UTC 2022] ACME_NEW_AUTHZ
+[Wed Nov  2 19:50:43 UTC 2022] ACME_NEW_ORDER='https://acme.zerossl.com/v2/DV90/newOrder'
+[Wed Nov  2 19:50:43 UTC 2022] ACME_NEW_ACCOUNT='https://acme.zerossl.com/v2/DV90/newAccount'
+[Wed Nov  2 19:50:43 UTC 2022] ACME_REVOKE_CERT='https://acme.zerossl.com/v2/DV90/revokeCert'
+[Wed Nov  2 19:50:43 UTC 2022] ACME_AGREEMENT='https://secure.trust-provider.com/repository/docs/Legacy/20221001_Certificate_Subscriber_Agreement_v_2_5_click.pdf'
+[Wed Nov  2 19:50:43 UTC 2022] ACME_NEW_NONCE='https://acme.zerossl.com/v2/DV90/newNonce'
+[Wed Nov  2 19:50:43 UTC 2022] Using CA: https://acme.zerossl.com/v2/DV90
+[Wed Nov  2 19:50:43 UTC 2022] _on_before_issue
+[Wed Nov  2 19:50:43 UTC 2022] _chk_main_domain='cadiaz.mavi.mx'
+[Wed Nov  2 19:50:43 UTC 2022] _chk_alt_domains
+[Wed Nov  2 19:50:43 UTC 2022] Le_LocalAddress
+[Wed Nov  2 19:50:43 UTC 2022] d='cadiaz.mavi.mx'
+[Wed Nov  2 19:50:43 UTC 2022] Check for domain='cadiaz.mavi.mx'
+[Wed Nov  2 19:50:43 UTC 2022] _currentRoot='dns'
+[Wed Nov  2 19:50:43 UTC 2022] d
+[Wed Nov  2 19:50:43 UTC 2022] config file is empty, can not read CA_KEY_HASH
+[Wed Nov  2 19:50:43 UTC 2022] Using config home:/acme.sh
+[Wed Nov  2 19:50:43 UTC 2022] ACME_DIRECTORY='https://acme.zerossl.com/v2/DV90'
+[Wed Nov  2 19:50:43 UTC 2022] _init api for server: https://acme.zerossl.com/v2/DV90
+[Wed Nov  2 19:50:43 UTC 2022] RSA key
+[Wed Nov  2 19:50:43 UTC 2022] config file is empty, can not read CA_EAB_KEY_ID
+[Wed Nov  2 19:50:43 UTC 2022] config file is empty, can not read CA_EAB_HMAC_KEY
+[Wed Nov  2 19:50:43 UTC 2022] config file is empty, can not read CA_EMAIL
+[Wed Nov  2 19:50:43 UTC 2022] No EAB credentials found for ZeroSSL, let's get one
+[Wed Nov  2 19:50:43 UTC 2022] [1;32macme.sh is using ZeroSSL as default CA now.[0m
+[Wed Nov  2 19:50:43 UTC 2022] [1;32mPlease update your account with an email address first.[0m
+[Wed Nov  2 19:50:43 UTC 2022] [1;32macme.sh --register-account -m my@example.com[0m
+[Wed Nov  2 19:50:43 UTC 2022] See: [1;32mhttps://github.com/acmesh-official/acme.sh/wiki/ZeroSSL.com-CA[0m
+[Wed Nov  2 19:50:43 UTC 2022] _on_issue_err
+[Wed Nov  2 19:50:43 UTC 2022] Please check log file for more details: /acme.sh/acme.sh.log

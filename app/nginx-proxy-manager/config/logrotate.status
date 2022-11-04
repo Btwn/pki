@@ -1,0 +1,19 @@
+logrotate state -- version 2
+"/data/logs/proxy-host-1_access.log" 2022-11-2-23:0:0
+"/data/logs/proxy-host-2_error.log" 2022-11-3-19:0:0
+"/data/logs/proxy-host-6_access.log" 2022-11-3-19:0:0
+"/data/logs/proxy-host-3_error.log" 2022-11-3-19:0:0
+"/data/logs/proxy-host-4_error.log" 2022-11-3-19:0:0
+"/data/logs/proxy-host-5_access.log" 2022-11-3-19:0:0
+"/data/logs/access.log" 2022-11-2-17:0:0
+"/data/logs/proxy-host-5_error.log" 2022-11-3-19:0:0
+"/data/logs/proxy-host-4_access.log" 2022-11-3-19:0:0
+"/data/logs/letsencrypt-requests_error.log" 2022-11-2-23:0:0
+"/data/logs/proxy-host-6_error.log" 2022-11-3-19:0:0
+"/data/logs/fallback_access.log" 2022-11-2-17:0:0
+"/data/logs/proxy-host-3_access.log" 2022-11-3-19:0:0
+"/data/logs/fallback_error.log" 2022-11-2-17:0:0
+"/data/logs/proxy-host-2_access.log" 2022-11-3-19:0:0
+"/data/logs/proxy-host-1_error.log" 2022-11-2-23:0:0
+"/data/logs/error.log" 2022-11-2-17:0:0
+"/data/logs/letsencrypt-requests_access.log" 2022-11-2-23:0:0

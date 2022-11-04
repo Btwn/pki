@@ -1,0 +1,17 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@       IN      SOA     cadiaz.mavi.mx. root.cadiaz.mavi.mx. (
+							  2         ; Serial
+						 604800         ; Refresh
+						  86400         ; Retry
+						2419200         ; Expire
+						 604800 )       ; Negative Cache TTL
+;
+@					IN	NS	cadiaz.mavi.mx.
+cadiaz.mavi.mx.		IN	A	172.16.202.150
+cadiaz.mavi.mx.		IN	TXT	"Algodon"
+dns.cadiaz.mavi.mx.	IN	A	172.16.202.150
+pc1.cadiaz.mavi.mx.	IN	A	172.16.202.150
+www.cadiaz.mavi.mx.	IN	A	172.16.202.150

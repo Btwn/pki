@@ -1,0 +1,23 @@
+proxy.local:53 {
+  hosts /config/hosts
+  log stdout
+  errors stdout
+}
+foo.local:53 {
+  hosts /config/hosts
+  log stdout
+  errors stdout
+}
+ca.local:53 {
+  hosts /config/hosts
+  log stdout
+  errors stdout
+}
+cadiaz.mavi.mx:53 {
+  hosts /config/hosts
+  log stdout
+  errors stdout
+}
+.:53 {
+  forward . /config/resolv.conf
+}

@@ -1,0 +1,11 @@
+docker run -d -v step:/home/step -p 9000:9000 -e "DOCKER_STEPCA_INIT_NAME=Smallstep" -e "DOCKER_STEPCA_INIT_DNS_NAMES=localhost,foo.local" smallstep/step-ca
+
+
+docker run -v step:/home/step smallstep/step-ca step certificate fingerprint certs/root_ca.crt
+
+0755e2d2799421d50ee2367143c3b589d94d00830fd2d3edcfe10d2b0d3640c6
+
+
+step ca bootstrap --ca-url https://localhost:9000 --fingerprint 0755e2d2799421d50ee2367143c3b589d94d00830fd2d3edcfe10d2b0d3640c6 --install
+
+step ca bootstrap --ca-url https://172.16.214.150:9000 --fingerprint 0755e2d2799421d50ee2367143c3b589d94d00830fd2d3edcfe10d2b0d3640c6 --install

@@ -1,0 +1,100 @@
+docker run --name coredns --restart=always -d -v $pwd/coredns/config:/config -p 53:53/tcp -p 53:53/udp -p 9153:9153 coredns/coredns -conf /config/Corefile
+
+
+docker run --name nginx-proxy-manager --restart=always -d -p 443:443 -p 80:8080 -p 8181:8181 -p 4443:4443 -v $pwd/app/nginx-proxy-manager/config:/config jlesage/nginx-proxy-manager
+
+
+changeme
+admin@proxy.com
+!zZyj4EJ8!Ba26D
+
+https://ca.local:4443/
+
+
+
+
+docker run -it --rm -v $pwd/step:/home/step smallstep/step-ca step ca init
+
+
+Password: DQMtP#<]a!mMYk)ZH2.2PZZq0f6Y`=8J
+Root fingerprint: 96f3998686351b4492382a7b30eb136e8599b0bd68983309bb74b3d3a5e4b392
+
+
+“encryptedKey”: “....”,
+"claims":{
+"minTLSCertDuration": "5s",
+"maxTLSCertDuration": "2h",
+"defaultTLSCertDuration": "2h",
+"disableRenewal": true
+}
+
+
+https://medium.com/@duhruh/trusting-your-docker-apps-setting-up-your-own-certificate-authority-7d1dbfb7dc4
+
+
+docker run --name certificate-authority --restart=always -d -p 127.0.0.1:9000:9000 -v $pwd/step:/home/step smallstep/step-ca
+
+
+
+
+docker run -it --rm -v $pwd/step:/home/step --user 1000:1000 duhruh/step-cli certificate fingerprint /home/step/certs/root_ca.crt
+
+
+
+docker run -it --rm --network host -v $pwd/step:/home/step --user 1000:1000 duhruh/step-cli ca root /home/step/certs/root_ca.crt --ca-url=https://ca.local:4443 --fingerprint=96f3998686351b4492382a7b30eb136e8599b0bd68983309bb74b3d3a5e4b392
+
+
+https://ca.local:4443
+
+
+
+docker run --rm  -it -v $pwd/out:/acme.sh neilpang/acme.sh --issue --dns -d cadiaz.mavi.mx
+
+
+
+
+
+
+
+
+
+
+certificado de autoridad
+sudo openssl genrsa -out root.key 4096
+sudo openssl req -new -x509 -days 10000 -key root.key -subj '/C=MX/ST=JAL/L=GDL/CN=Cadiaz' -out root.crt
+
+
+solicitud del certificado
+sudo openssl genrsa -out private.key 4096
+sudo openssl req -new -key private.key -subj '/C=MX/ST=JAL/L=GDL/CN=foo.local' -out request.csr
+
+sudo openssl x509 -req -CA root.crt -CAkey root.key -days 365 -in request.csr -CAcreateserial -out certificado.crt
+
+
+
+
+
+
+sudo openssl x509 -req -CA root.crt -CAkey root.key -days 365 -in site.csr -CAcreateserial -out site.crt
+
+
+
+
+openssl genpkey -out fd.key -algorithm RSA -pkeyopt rsa_keygen_bits:2048
+
+openssl genpkey -out fd.key -algorithm RSA -pkeyopt
+openssl pkey -in fd.key -pubout -out fd-public.key
+openssl req -new -key fd.key -out fd.csr
+openssl x509 -req -days 365 -in fd.csr -signkey fd.key -out fd.crt
+
+
+
+openssl genpkey -out root.key -algorithm RSA
+openssl pkey -in root.key -pubout -out root.pub
+openssl req -new -key root.key -out root.csr
+openssl x509 -req -days 1000 -in root.csr -signkey root.key -out root.crt
+
+openssl genpkey -out site.key -algorithm RSA
+openssl pkey -in site.key -pubout -out site.pub
+openssl req -new -key site.key -out site.csr
+openssl x509 -req -days 365 -in site.csr -signkey root.key -out site.crt

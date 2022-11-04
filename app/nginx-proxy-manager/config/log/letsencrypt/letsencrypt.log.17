@@ -1,0 +1,10 @@
+2022-11-02 18:12:55,178:DEBUG:certbot._internal.main:certbot version: 1.27.0
+2022-11-02 18:12:55,178:DEBUG:certbot._internal.main:Location of certbot entry point: /usr/bin/certbot
+2022-11-02 18:12:55,178:DEBUG:certbot._internal.main:Arguments: ['--non-interactive', '--quiet', '--config', '/etc/letsencrypt.ini', '--preferred-challenges', 'dns,http', '--disable-hook-validation']
+2022-11-02 18:12:55,178:DEBUG:certbot._internal.main:Discovered plugins: PluginsRegistry(PluginEntryPoint#manual,PluginEntryPoint#null,PluginEntryPoint#standalone,PluginEntryPoint#webroot)
+2022-11-02 18:12:55,503:DEBUG:certbot._internal.log:Root logging level set at 40
+2022-11-02 18:12:55,521:DEBUG:certbot._internal.display.obj:Notifying user: 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+2022-11-02 18:12:55,521:DEBUG:certbot._internal.display.obj:Notifying user: No renewals were attempted.
+2022-11-02 18:12:55,521:DEBUG:certbot._internal.display.obj:Notifying user: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+2022-11-02 18:12:55,522:DEBUG:certbot._internal.renewal:no renewal failures

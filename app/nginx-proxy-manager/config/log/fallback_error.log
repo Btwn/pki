@@ -1,0 +1,2 @@
+2022/11/02 17:12:48 [error] 609#609: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.17.0.1, server: nginxproxymanager, request: "GET /api/ HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost:8181", referrer: "http://localhost:8181/"
+2022/11/02 23:56:42 [error] 683#683: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.17.0.1, server: nginxproxymanager, request: "GET /api/ HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost:8181", referrer: "http://localhost:8181/"
