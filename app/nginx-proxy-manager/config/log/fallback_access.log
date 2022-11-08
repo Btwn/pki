@@ -1,3 +1,5 @@
 [03/Nov/2022:18:35:44 +0000] 200 - GET http foo.local "/" [Client 172.17.0.1] [Length 568] [Gzip 1.86] "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" "-"
 [03/Nov/2022:18:36:12 +0000] 200 - GET http foo.local "/" [Client 172.17.0.1] [Length 1033] [Gzip -] "curl/7.83.1" "-"
 [03/Nov/2022:19:05:28 +0000] 444 - GET https ca.local "/root/96f3998686351b4492382a7b30eb136e8599b0bd68983309bb74b3d3a5e4b392" [Client 172.17.0.1] [Length 0] [Gzip -] "Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Falkon/3.1.0 Chrome/69.0.3497.128 Safari/537.36" "-"
+[05/Nov/2022:00:34:24 +0000] 404 - GET http localhost "/site/sha" [Client 172.17.0.1] [Length 122] [Gzip 1.35] "VSTeamExplorer-GitHub" "-"
+[07/Nov/2022:16:19:21 +0000] 404 - GET http localhost "/site/sha" [Client 172.17.0.1] [Length 122] [Gzip 1.35] "VSTeamExplorer-GitHub" "-"

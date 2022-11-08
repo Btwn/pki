@@ -1,10 +1,10 @@
-2022-11-04 01:22:29,854:DEBUG:certbot._internal.main:certbot version: 1.27.0
-2022-11-04 01:22:29,854:DEBUG:certbot._internal.main:Location of certbot entry point: /usr/bin/certbot
-2022-11-04 01:22:29,854:DEBUG:certbot._internal.main:Arguments: ['--non-interactive', '--quiet', '--config', '/etc/letsencrypt.ini', '--preferred-challenges', 'dns,http', '--disable-hook-validation']
-2022-11-04 01:22:29,854:DEBUG:certbot._internal.main:Discovered plugins: PluginsRegistry(PluginEntryPoint#manual,PluginEntryPoint#null,PluginEntryPoint#standalone,PluginEntryPoint#webroot)
-2022-11-04 01:22:30,148:DEBUG:certbot._internal.log:Root logging level set at 40
-2022-11-04 01:22:30,162:DEBUG:certbot._internal.display.obj:Notifying user: 
+2022-11-07 16:29:07,522:DEBUG:certbot._internal.main:certbot version: 1.27.0
+2022-11-07 16:29:07,522:DEBUG:certbot._internal.main:Location of certbot entry point: /usr/bin/certbot
+2022-11-07 16:29:07,522:DEBUG:certbot._internal.main:Arguments: ['--non-interactive', '--quiet', '--config', '/etc/letsencrypt.ini', '--preferred-challenges', 'dns,http', '--disable-hook-validation']
+2022-11-07 16:29:07,522:DEBUG:certbot._internal.main:Discovered plugins: PluginsRegistry(PluginEntryPoint#manual,PluginEntryPoint#null,PluginEntryPoint#standalone,PluginEntryPoint#webroot)
+2022-11-07 16:29:07,889:DEBUG:certbot._internal.log:Root logging level set at 40
+2022-11-07 16:29:07,902:DEBUG:certbot._internal.display.obj:Notifying user: 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-2022-11-04 01:22:30,162:DEBUG:certbot._internal.display.obj:Notifying user: No renewals were attempted.
-2022-11-04 01:22:30,162:DEBUG:certbot._internal.display.obj:Notifying user: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-2022-11-04 01:22:30,163:DEBUG:certbot._internal.renewal:no renewal failures
+2022-11-07 16:29:07,903:DEBUG:certbot._internal.display.obj:Notifying user: No renewals were attempted.
+2022-11-07 16:29:07,903:DEBUG:certbot._internal.display.obj:Notifying user: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+2022-11-07 16:29:07,903:DEBUG:certbot._internal.renewal:no renewal failures

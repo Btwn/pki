@@ -1,0 +1,1 @@
+2022/11/04 15:50:46 [error] 783#783: *869 upstream prematurely closed connection while reading response header from upstream, client: 172.17.0.1, server: proxy.local, request: "GET /api/users/me?expand=permissions HTTP/1.1", upstream: "http://172.16.214.150:8181/api/users/me?expand=permissions", host: "proxy.local", referrer: "http://proxy.local/nginx/proxy"

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "GoTdGGdfTLphho2NkVQUVz2rA5h3KYeakAKM1jA98Cg=",
+  "Source": "HttpsAPI",
+  "BasePath": "_content/HttpsAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
