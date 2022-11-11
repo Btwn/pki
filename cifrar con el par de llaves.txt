@@ -1,0 +1,8 @@
+https://elbauldelprogramador.com/como-cifrar-archivos-con-openssl/
+
+
+openssl genrsa -out clave.pem 4096
+openssl rsa -in clave.pem -out clave.pub.pem -outform PEM -pubout
+
+openssl rsautl -encrypt -in texto.txt -out texto.enc -inkey clave.pub.pem -pubin
+openssl rsautl -decrypt -in texto.enc -out texto.dec -inkey clave.pem 
