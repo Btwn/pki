@@ -1,0 +1,51 @@
+https://deliciousbrains.com/ssl-certificate-authority-for-local-https-development/
+
+
+# Generar mi certificado de autoridad
+
+* generar key root (mi ejemplo use mavi01 como contraseña)
+openssl genrsa -des3 -out myCA.key 2048
+
+* generar el certificado root
+openssl req -x509 -new -nodes -key myCA.key -sha256 -days 1825 -out myCA.crt
+
+
+YA SE PUEDE INSTALAT myCA.crt EN TODOS LOS DISPOSITIVOS
+
+
+* generar el private key para la pagina
+openssl genrsa -out foo.mavi.mx.key 2048
+
+* generar el request  para la pagina
+openssl req -new -key foo.mavi.mx.key -out foo.mavi.mx.csr
+
+* añadir al archivo foo.mavi.mx.ext
+authorityKeyIdentifier=keyid,issuer
+basicConstraints=CA:FALSE
+keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
+subjectAltName = @alt_names
+
+[alt_names]
+DNS.1 = foo.mavi.mx
+DNS.2 = www.foo.mavi.mx
+
+
+
+* generar el certificado firmado por el rootCA
+
+openssl x509 -req -in foo.mavi.mx.csr -CA myCA.pem -CAkey myCA.key -CAcreateserial -out foo.mavi.mx.crt -days 825 -sha256 -extfile foo.mavi.mx.ext
+
+
+
+docker run --rm -it --name ubuntu -v %cd%/certs:/home cadiaz/openssl
+
+
+
+
+* importar certificado de confianza en java
+keytool -importcert -noprompt -keystore /opt/java/openjdk/lib/security/cacerts -alias myCA -file myCA.crt -storepass changeit -trustcacerts
+
+
+
+
+

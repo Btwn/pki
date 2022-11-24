@@ -2,8 +2,8 @@ const https = require('https');
 const fs = require('fs');
 
 const options = {
-  key: fs.readFileSync('contoso.com.key'),
-  cert: fs.readFileSync('contoso.com.crt')
+  key: fs.readFileSync('cadiaz.online.key'),
+  cert: fs.readFileSync('cadiaz.online.crt')
 };
 
 https.createServer(options, function (req, res) {
